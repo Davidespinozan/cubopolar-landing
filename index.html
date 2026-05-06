@@ -204,7 +204,14 @@ footer{background:#060d1e;padding:28px 5%}
   .form-grid .full{grid-column:1}
   .grid-4q{grid-template-columns:1fr 1fr}
   .hero-btns,.camion-btns{flex-direction:column}
-  .canal-grid{grid-template-columns:1fr}
+  /* 2 cards lado a lado en mobile (compacto) */
+  .canal-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .canal-card{padding:22px 14px}
+  .canal-emoji{font-size:1.5rem;margin-bottom:10px}
+  .canal-card h3{font-size:1rem;margin-bottom:6px}
+  .canal-card p{font-size:.78rem;margin-bottom:16px;line-height:1.5}
+  .canal-card .btn{padding:11px 8px;font-size:.78rem;gap:0}
+  .canal-card .btn svg{display:none}
   /* Hero compacto en mobile para que la imagen quepa en la primera pantalla */
   .hero-text{padding:20px 5% 10px}
   h1{font-size:1.6rem;margin-bottom:10px}
