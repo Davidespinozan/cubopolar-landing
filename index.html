@@ -219,6 +219,19 @@ footer{background:#060d1e;padding:28px 5%}
   .hero-img img{height:230px}
   .hero-img::after{height:140px}
 }
+
+/* Mobile: prevenir zoom automático de iOS Safari al focus de inputs.
+   iOS hace zoom forzado cuando un input tiene font-size < 16px y NO
+   regresa solo. Forzamos 16px solo en pantallas chicas (≤768px) para
+   no afectar el diseño desktop. !important porque sobrescribe el
+   font-size que tengan los inputs por sus propias reglas. */
+@media (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
 </style>
 </head>
 <body>
