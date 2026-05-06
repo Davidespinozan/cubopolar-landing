@@ -72,12 +72,12 @@ h1 .accent{color:#60A5FA}
 .hero-img img{width:auto;height:520px;max-width:100%;object-fit:contain;filter:drop-shadow(0 0 50px rgba(96,165,250,.35)) drop-shadow(0 20px 40px rgba(0,0,0,.5));position:relative;z-index:1}
 
 /* SECCIONES */
-section{padding:80px 5%}
+section{padding:80px 5%;box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
 .wrap{max-width:1140px;margin:0 auto}
 .eyebrow{font-size:.68rem;font-weight:700;letter-spacing:2.5px;color:#7AABFF;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .eyebrow::before{content:'';width:16px;height:2px;background:#7AABFF;border-radius:2px}
 h2{font-size:clamp(1.4rem,2.4vw,2rem);font-weight:800;letter-spacing:-.8px;margin-bottom:36px;line-height:1.2;color:white}
-.bg-soft{background:#0a1a38}
+.bg-soft{background:linear-gradient(180deg,#102849 0%,#0a1a38 100%)}
 
 /* PRODUCTOS */
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
@@ -334,7 +334,7 @@ footer{background:#060d1e;padding:28px 5%}
 </section>
 
 <!-- CANAL DE PEDIDO — 2 CTAs -->
-<section id="canal">
+<section id="canal" class="bg-soft">
   <div class="wrap">
     <p class="eyebrow">Hacer un pedido</p>
     <h2>&#191;C&#243;mo prefieres pedir?</h2>
