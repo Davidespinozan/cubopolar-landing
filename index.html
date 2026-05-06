@@ -199,10 +199,14 @@ footer{background:#060d1e;padding:28px 5%}
 @media(max-width:560px){
   section{padding:56px 5%}
   .grid-4{grid-template-columns:1fr 1fr}
-  .form-grid{grid-template-columns:1fr}
-  .form-grid .full{grid-column:1}
   .grid-4q{grid-template-columns:1fr 1fr}
   .hero-btns{flex-direction:column}
+  /* Form compacto en mobile: 2 cols, paddings/labels más chicos */
+  .form-grid{gap:10px}
+  #pedir h2{margin-bottom:20px}
+  label{font-size:.7rem;margin-bottom:3px}
+  input,select,textarea{padding:10px 12px;font-size:.85rem}
+  textarea{min-height:70px}
   /* 2 cards lado a lado en mobile (compacto) */
   .canal-grid{grid-template-columns:1fr 1fr;gap:12px}
   .canal-card{padding:22px 14px}
